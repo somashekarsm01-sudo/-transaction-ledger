@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloce Commerce Operations | Amazon Marketplace Protection & Supply Chain Advisory</title>
+    <meta name="description" content="Fixed-fee Amazon catalog protection and supply chain advisory for established brands. Hero-ASIN monitoring, suppression triage under 4 hours, and stockout defense.">
+    <meta name="theme-color" content="#0F172A">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F172A'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='34' font-weight='800' text-anchor='middle' fill='%2310B981'%3EV%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+                    colors: {
+                        corporateNavy: '#0F172A',
+                        slateDark: '#1E293B',
+                        accentEmerald: '#10B981',
+                        borderGray: '#334155'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-padding-top: 5rem; -webkit-text-size-adjust: 100%; }
+        body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; overflow-x: hidden; }
+        .grid-bg {
+            background-image:
+                linear-gradient(to right, rgba(51,65,85,.25) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(51,65,85,.25) 1px, transparent 1px);
+            background-size: 56px 56px;
+            -webkit-mask-image: radial-gradient(ellipse at 70% 0%, #000 0%, transparent 70%);
+            mask-image: radial-gradient(ellipse at 70% 0%, #000 0%, transparent 70%);
+        }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .chev { transform: rotate(180deg); }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto !important; }
+            * { transition: none !important; animation: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-corporateNavy text-slate-100 antialiased selection:bg-accentEmerald/30 selection:text-white">
+
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:bg-accentEmerald focus:text-corporateNavy focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold focus:z-[100] focus:outline-none">Skip to content</a>
+
+    <!-- Header -->
+    <header class="border-b border-borderGray bg-corporateNavy/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-3 min-w-0">
+                <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-white">VELOCE<span class="text-accentEmerald">.</span></span>
+                <span class="hidden sm:inline-block text-[10px] uppercase tracking-[0.2em] text-slate-400 bg-slateDark px-2 py-1 rounded border border-borderGray whitespace-nowrap">Commerce Operations</span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300" aria-label="Primary">
+                <a href="#pedigree" class="hover:text-accentEmerald transition-colors">Institutional Pedigree</a>
+                <a href="#sla" class="hover:text-accentEmerald transition-colors">SLA &amp; Pricing</a>
+                <a href="#standards" class="hover:text-accentEmerald transition-colors">Global Standards</a>
+                <a href="#onboarding" class="hover:text-accentEmerald transition-colors">Onboarding</a>
+                <a href="#agreement" class="hover:text-accentEmerald transition-colors">Agreement &amp; Payment</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="hidden sm:inline-flex bg-accentEmerald hover:bg-emerald-400 text-corporateNavy font-semibold text-sm px-5 py-2.5 rounded-md transition-colors shadow-lg shadow-emerald-500/10">Secure Retainer</a>
+                <button id="menuBtn" type="button" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-md border border-borderGray text-slate-200 hover:bg-slateDark transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <svg id="iconOpen" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+                    <svg id="iconClose" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-borderGray bg-corporateNavy">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col text-base font-medium text-slate-200" aria-label="Mobile">
+                <a href="#pedigree" class="py-3 border-b border-borderGray/60 hover:text-accentEmerald">Institutional Pedigree</a>
+                <a href="#sla" class="py-3 border-b border-borderGray/60 hover:text-accentEmerald">SLA &amp; Pricing</a>
+                <a href="#standards" class="py-3 border-b border-borderGray/60 hover:text-accentEmerald">Global Standards</a>
+                <a href="#onboarding" class="py-3 border-b border-borderGray/60 hover:text-accentEmerald">Onboarding Requirements</a>
+                <a href="#agreement" class="py-3 border-b border-borderGray/60 hover:text-accentEmerald">Agreement &amp; Payment</a>
+                <a href="#contact" class="mt-4 text-center bg-accentEmerald text-corporateNavy font-semibold px-5 py-3 rounded-md">Secure Retainer</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+    <!-- Hero -->
+    <section id="top" class="relative overflow-hidden border-b border-borderGray">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.10),transparent_45%)]" aria-hidden="true"></div>
+        <div class="absolute inset-0 grid-bg pointer-events-none" aria-hidden="true"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+            <div class="max-w-4xl">
+                <span class="inline-flex items-center text-[11px] sm:text-xs font-semibold text-accentEmerald bg-emerald-500/10 px-3 py-1.5 rounded-full border border-emerald-500/20 mb-6 uppercase tracking-wider">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accentEmerald mr-2 animate-pulse" aria-hidden="true"></span>
+                    Fractional Institutional Operations
+                </span>
+                <h1 class="text-[2rem] leading-[1.1] sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white tracking-tight mb-6">
+                    Elite Amazon Catalog Protection &amp; Supply Chain Advisory for <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-200">7-Figure Global Brands</span>
+                </h1>
+                <p class="text-base sm:text-lg lg:text-xl text-slate-400 mb-10 leading-relaxed max-w-3xl">
+                    Stop losing critical revenue to unexpected ASIN suppressions, catalog mismatches, and devastating stockouts. We provide institutional, high-stakes marketplace management engineered by ex-Amazon and ex-Cloudtail operational leadership.
+                </p>
+
+                <div class="bg-slateDark/60 border border-borderGray p-5 sm:p-8 rounded-xl mb-10 max-w-xl backdrop-blur-sm shadow-2xl shadow-black/20">
+                    <div class="text-[11px] sm:text-xs uppercase tracking-widest text-slate-400 mb-1 font-semibold">The Transparent Fixed Rate Model</div>
+                    <div class="text-2xl sm:text-3xl font-bold text-white mb-2">$2,500 / Month Flat Retainer</div>
+                    <ul class="text-sm text-slate-300 border-t border-borderGray/50 pt-3 mt-3 space-y-1">
+                        <li>&bull; Billed Monthly in Advance per Milestone Cycle</li>
+                        <li>&bull; Capped Portfolio Capacity</li>
+                        <li>&bull; Zero Code/SQL Interventions Required</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <a href="#contact" class="bg-accentEmerald hover:bg-emerald-400 text-corporateNavy font-bold text-center px-8 py-4 rounded-lg transition-colors shadow-xl shadow-emerald-500/10">Initialize Client Onboarding</a>
+                    <a href="#sla" class="border border-borderGray hover:bg-slateDark text-white font-medium text-center px-8 py-4 rounded-lg transition-colors">Review Service Level Agreements</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Moat -->
+    <section class="py-16 sm:py-20 lg:py-28 border-b border-borderGray bg-slateDark/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-accentEmerald font-bold mb-3">Strategic Moat</h2>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Why Brands Choose Veloce Over Generalist Freelancers</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8 text-sm">
+                <div class="bg-slateDark border border-borderGray p-6 sm:p-8 rounded-xl">
+                    <div class="text-accentEmerald text-lg font-bold mb-2">1. True Platform Insiders</div>
+                    <p class="text-slate-400 leading-relaxed">Unlike typical freelancers or virtual assistants who navigate solely through front-facing Seller Central drop-downs, our domain logic was developed inside the catalog and selection mechanisms of Amazon and Cloudtail India. We do not guess how backend filters trip; we diagnose them directly.</p>
+                </div>
+                <div class="bg-slateDark border border-borderGray p-6 sm:p-8 rounded-xl">
+                    <div class="text-accentEmerald text-lg font-bold mb-2">2. Zero Grunt-Work Focus</div>
+                    <p class="text-slate-400 leading-relaxed">We deliberately skip surface-level vanity work such as generic ad-spend management or graphic copy design. We execute solely on infrastructure metrics: catalog uptime, false-positive suppression appeals, and supply buffer safety calculations.</p>
+                </div>
+                <div class="bg-slateDark border border-borderGray p-6 sm:p-8 rounded-xl">
+                    <div class="text-accentEmerald text-lg font-bold mb-2">3. Fixed, Capped Economics</div>
+                    <p class="text-slate-400 leading-relaxed">One flat monthly fee and a capped portfolio, so your cost never scales with the number of tickets raised and our attention never gets diluted across dozens of accounts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pedigree -->
+    <section id="pedigree" class="py-16 sm:py-20 lg:py-28 bg-slateDark/30 border-b border-borderGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-accentEmerald font-bold mb-3">Vetted Corporate Architecture</h2>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Engineered by Leadership from the World's Toughest Marketplace Ecosystems</p>
+                <p class="text-slate-400 mt-4 leading-relaxed">Our operational background directly handled vendor onboarding, catalog defects, and inventory velocity at scale.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
+                <article class="bg-slateDark border border-borderGray p-6 sm:p-8 rounded-xl hover:border-accentEmerald/50 transition-colors">
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Ex-Corporate Scope</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Amazon Seller Services</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Direct internal experience running program and project management within Amazon's Selection Teams. Specialized in ASIN creation, backend suppression codes, and mapping competitor catalog metrics.</p>
+                </article>
+                <article class="bg-slateDark border border-borderGray p-6 sm:p-8 rounded-xl hover:border-accentEmerald/50 transition-colors">
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Ex-Distributor Scope</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cloudtail India</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Managed end-to-end Vendor Operations, Private Label procurement, and demand planning for Amazon's largest joint-venture seller entity. Built Weekly Business Reviews (WBR) and supplier pricing contracts.</p>
+                </article>
+                <article class="bg-slateDark border border-borderGray p-6 sm:p-8 rounded-xl hover:border-accentEmerald/50 transition-colors md:col-span-2 lg:col-span-1">
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Retail &amp; Sourcing Scope</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Max Hypermarket &amp; Sourcing</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Deep integration across modern hypermarkets and food processing networks (HACCP plant setup parameters). Merges brick-and-mortar procurement structure with digital multi-channel retail.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLA -->
+    <section id="sla" class="py-16 sm:py-20 lg:py-28 border-b border-borderGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-accentEmerald font-bold mb-3">Quantifiable Commitments</h2>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">The $2,500/Month Operational Service Level Agreement</p>
+                <p class="text-slate-400 mt-4 leading-relaxed">We do not bill for open-ended "hours of work." We protect your top-line revenue through measurable performance frameworks.</p>
+            </div>
+
+            <div class="bg-slateDark border border-borderGray rounded-2xl overflow-hidden shadow-2xl shadow-black/30">
+                <div class="p-6 sm:p-8 border-b border-borderGray flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-white">Brand Portfolio Protection Framework</h3>
+                        <p class="text-slate-400 text-sm mt-1">Operational coverage parameters per individual brand contract.</p>
+                    </div>
+                    <div class="bg-corporateNavy px-6 py-3 rounded-lg border border-borderGray text-center md:text-right self-start md:self-auto">
+                        <span class="text-xs text-slate-400 block uppercase tracking-widest">Fixed Investment</span>
+                        <span class="text-2xl font-bold text-accentEmerald">$2,500 <span class="text-xs text-white">/ USD Month</span></span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-borderGray">
+                    <div class="p-6 sm:p-8">
+                        <div class="text-accentEmerald text-xs uppercase tracking-widest font-bold mb-2">01. Portfolio Scope</div>
+                        <h4 class="text-lg font-semibold text-white mb-2">15 to 30 Hero ASINs</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Focused on guarding and scaling the top 20% of products that drive 80% of your gross merchandise value (GMV).</p>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <div class="text-accentEmerald text-xs uppercase tracking-widest font-bold mb-2">02. Listing Triage SLA</div>
+                        <h4 class="text-lg font-semibold text-white mb-2">MTTR &lt; 4 Hours</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Mean time to resolution on suppressions, content mismatches and buy-box-blocking defects, measured from detection to restored listing.</p>
+                    </div>
+                    <div class="p-6 sm:p-8">
+                        <div class="text-accentEmerald text-xs uppercase tracking-widest font-bold mb-2">03. Stockout Defense</div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Weekly Cover Review</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">A weekly review of forward inventory cover on every hero ASIN, with replenishment flags raised before a stockout reaches the listing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards -->
+    <section id="standards" class="py-16 sm:py-20 lg:py-28 bg-slateDark/30 border-b border-borderGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-accentEmerald font-bold mb-3">Operating Discipline</h2>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Global Standards We Operate To</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-slateDark border border-borderGray rounded-xl p-6"><h3 class="font-semibold text-white mb-2">Catalog Integrity</h3><p class="text-sm text-slate-400 leading-relaxed">Titles, bullets, images and attributes audited against Amazon content policies and category rules.</p></div>
+                <div class="bg-slateDark border border-borderGray rounded-xl p-6"><h3 class="font-semibold text-white mb-2">Documented Playbooks</h3><p class="text-sm text-slate-400 leading-relaxed">Every recurring issue gets a written runbook, so resolution never depends on one person.</p></div>
+                <div class="bg-slateDark border border-borderGray rounded-xl p-6"><h3 class="font-semibold text-white mb-2">Metrics-Led Reviews</h3><p class="text-sm text-slate-400 leading-relaxed">Weekly reporting on suppressions, resolution time, inventory cover and buy-box health.</p></div>
+                <div class="bg-slateDark border border-borderGray rounded-xl p-6"><h3 class="font-semibold text-white mb-2">Access Discipline</h3><p class="text-sm text-slate-400 leading-relaxed">Least-privilege Seller Central roles only. We never ask for your master login credentials.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Onboarding -->
+    <section id="onboarding" class="py-16 sm:py-20 lg:py-28 border-b border-borderGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-accentEmerald font-bold mb-3">Client Intake</h2>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Onboarding Requirements</p>
+            </div>
+            <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <li class="bg-slateDark border border-borderGray rounded-xl p-6"><span class="w-8 h-8 rounded-full bg-accentEmerald text-corporateNavy font-bold text-sm flex items-center justify-center mb-4">1</span><div class="font-semibold text-white">Brand &amp; ASIN list</div><p class="text-sm text-slate-400 mt-1">Your top 15 to 30 ASINs ranked by GMV.</p></li>
+                <li class="bg-slateDark border border-borderGray rounded-xl p-6"><span class="w-8 h-8 rounded-full bg-accentEmerald text-corporateNavy font-bold text-sm flex items-center justify-center mb-4">2</span><div class="font-semibold text-white">Seller Central access</div><p class="text-sm text-slate-400 mt-1">A named user with limited catalog, inventory and report permissions.</p></li>
+                <li class="bg-slateDark border border-borderGray rounded-xl p-6"><span class="w-8 h-8 rounded-full bg-accentEmerald text-corporateNavy font-bold text-sm flex items-center justify-center mb-4">3</span><div class="font-semibold text-white">Supply data</div><p class="text-sm text-slate-400 mt-1">Current stock, inbound shipments and supplier lead times.</p></li>
+                <li class="bg-slateDark border border-borderGray rounded-xl p-6"><span class="w-8 h-8 rounded-full bg-accentEmerald text-corporateNavy font-bold text-sm flex items-center justify-center mb-4">4</span><div class="font-semibold text-white">One escalation owner</div><p class="text-sm text-slate-400 mt-1">A single decision-maker for approvals and urgent calls.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Agreement & Payment -->
+    <section id="agreement" class="py-16 sm:py-20 lg:py-28 bg-slateDark/30 border-b border-borderGray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-accentEmerald font-bold mb-3">Contract &amp; Billing</h2>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Master Services Agreement &amp; Payment</p>
+                <p class="text-slate-400 mt-4 leading-relaxed">A plain-language summary of our terms. The signed Master Services Agreement is the governing document.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-start">
+                <div class="lg:col-span-3 space-y-3">
+                    <details class="bg-slateDark border border-borderGray rounded-lg" open>
+                        <summary class="cursor-pointer flex items-center justify-between gap-4 p-5 font-medium text-white">1. Scope of Services
+                            <svg class="chev w-4 h-4 flex-none text-slate-400 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 9l6 6 6-6"/></svg></summary>
+                        <p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">Catalog protection, suppression triage and stockout monitoring for 15 to 30 agreed hero ASINs, plus a weekly review. Work outside this scope, including advertising, content design and software development, requires a written change order.</p>
+                    </details>
+                    <details class="bg-slateDark border border-borderGray rounded-lg">
+                        <summary class="cursor-pointer flex items-center justify-between gap-4 p-5 font-medium text-white">2. Fees &amp; Billing
+                            <svg class="chev w-4 h-4 flex-none text-slate-400 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 9l6 6 6-6"/></svg></summary>
+                        <p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">A flat retainer of USD 2,500 per month, invoiced monthly in advance for each milestone cycle. Work for a cycle begins once payment is received. Bank charges and any taxes are the client's responsibility unless the agreement states otherwise.</p>
+                    </details>
+                    <details class="bg-slateDark border border-borderGray rounded-lg">
+                        <summary class="cursor-pointer flex items-center justify-between gap-4 p-5 font-medium text-white">3. Service Levels
+                            <svg class="chev w-4 h-4 flex-none text-slate-400 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 9l6 6 6-6"/></svg></summary>
+                        <p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">We target a mean time to resolution under 4 hours on covered listing defects. Resolution depends on Amazon's own processing, so outcomes controlled by Amazon are outside our direct control and sales results are not guaranteed.</p>
+                    </details>
+                    <details class="bg-slateDark border border-borderGray rounded-lg">
+                        <summary class="cursor-pointer flex items-center justify-between gap-4 p-5 font-medium text-white">4. Access, Confidentiality &amp; Data
+                            <svg class="chev w-4 h-4 flex-none text-slate-400 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 9l6 6 6-6"/></svg></summary>
+                        <p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">We use named, limited-permission accounts that you can revoke at any time. Your business data stays confidential and is used only to deliver the services.</p>
+                    </details>
+                    <details class="bg-slateDark border border-borderGray rounded-lg">
+                        <summary class="cursor-pointer flex items-center justify-between gap-4 p-5 font-medium text-white">5. Term, Termination &amp; Liability
+                            <svg class="chev w-4 h-4 flex-none text-slate-400 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 9l6 6 6-6"/></svg></summary>
+                        <p class="px-5 pb-5 text-sm text-slate-400 leading-relaxed">The agreement runs month to month and either party may end it with written notice as set out in the signed agreement. Liability is limited as stated in the signed agreement. Governing law and jurisdiction are specified in the signed agreement.</p>
+                    </details>
+                </div>
+
+                <aside class="lg:col-span-2 bg-slateDark border border-borderGray rounded-2xl p-6 sm:p-8 shadow-2xl shadow-black/30" aria-labelledby="payHeading">
+                    <h3 id="payHeading" class="text-lg font-bold text-white mb-1">Payment Parameters</h3>
+                    <p class="text-xs text-slate-400 mb-5">Confirm these details with us directly before sending any funds.</p>
+                    <dl class="text-sm divide-y divide-borderGray/60">
+                        <div class="py-3 flex justify-between gap-4"><dt class="text-slate-400">Bank</dt><dd class="text-white font-medium text-right">Bank of Baroda</dd></div>
+                        <div class="py-3 flex justify-between gap-4"><dt class="text-slate-400">IFSC</dt><dd class="text-white font-mono font-medium tracking-wider text-right">BARB0VJMETA</dd></div>
+                        <div class="py-3 flex justify-between gap-4"><dt class="text-slate-400">Beneficiary</dt><dd class="text-white font-medium text-right">Veloce Commerce Operations</dd></div>
+                        <div class="py-3 flex justify-between gap-4"><dt class="text-slate-400">Account number</dt><dd class="text-slate-300 text-right">Shared on your invoice</dd></div>
+                        <div class="py-3 flex justify-between gap-4"><dt class="text-slate-400">Currency</dt><dd class="text-white font-medium text-right">USD retainer</dd></div>
+                    </dl>
+                    <p class="mt-5 text-xs text-slate-500 leading-relaxed">We will never change bank details by email or chat alone. Verify any change by phone with us first.</p>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 sm:py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-start">
+                <div class="lg:col-span-2">
+                    <h2 class="text-xs uppercase tracking-widest text-accentEmerald font-bold mb-3">Secure Retainer</h2>
+                    <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight">Start Your Onboarding</p>
+                    <p class="text-slate-400 mt-4 leading-relaxed">Tell us about your brand and hero ASINs. We reply with a fit assessment and next steps, usually within one business day.</p>
+                </div>
+
+                <form class="lg:col-span-3 bg-slateDark border border-borderGray rounded-2xl p-6 sm:p-8 shadow-2xl shadow-black/30 space-y-5" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-300 mb-1.5">Full name <span class="text-accentEmerald" aria-hidden="true">*</span></label>
+                            <input id="name" name="name" type="text" required autocomplete="name" class="w-full bg-corporateNavy border border-borderGray rounded-md px-4 py-3 text-base text-white focus:border-accentEmerald focus:outline-none focus:ring-1 focus:ring-accentEmerald">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-300 mb-1.5">Work email <span class="text-accentEmerald" aria-hidden="true">*</span></label>
+                            <input id="email" name="email" type="email" required autocomplete="email" class="w-full bg-corporateNavy border border-borderGray rounded-md px-4 py-3 text-base text-white focus:border-accentEmerald focus:outline-none focus:ring-1 focus:ring-accentEmerald">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="brand" class="block text-sm font-medium text-slate-300 mb-1.5">Brand / store name <span class="text-accentEmerald" aria-hidden="true">*</span></label>
+                            <input id="brand" name="brand" type="text" required autocomplete="organization" class="w-full bg-corporateNavy border border-borderGray rounded-md px-4 py-3 text-base text-white focus:border-accentEmerald focus:outline-none focus:ring-1 focus:ring-accentEmerald">
+                        </div>
+                        <div>
+                            <label for="gmv" class="block text-sm font-medium text-slate-300 mb-1.5">Annual Amazon GMV <span class="text-accentEmerald" aria-hidden="true">*</span></label>
+                            <select id="gmv" name="gmv" required class="w-full bg-corporateNavy border border-borderGray rounded-md px-4 py-3 text-base text-white focus:border-accentEmerald focus:outline-none focus:ring-1 focus:ring-accentEmerald">
+                                <option value="" disabled selected>Select range</option>
+                                <option>Under $1M</option>
+                                <option>$1M &ndash; $5M</option>
+                                <option>$5M &ndash; $20M</option>
+                                <option>$20M+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-slate-300 mb-1.5">Biggest catalog or inventory problem right now</label>
+                        <textarea id="message" name="message" rows="4" aria-describedby="msgHelp" class="w-full bg-corporateNavy border border-borderGray rounded-md px-4 py-3 text-base text-white focus:border-accentEmerald focus:outline-none focus:ring-1 focus:ring-accentEmerald"></textarea>
+                        <p id="msgHelp" class="text-xs text-slate-500 mt-1.5">Optional. For example: recurring suppressions, buy-box loss, or stockouts on top SKUs.</p>
+                    </div>
+                    <label class="flex items-start gap-3 text-sm text-slate-400" for="agree">
+                        <input id="agree" name="agree" type="checkbox" required class="mt-1 w-4 h-4 accent-emerald-500">
+                        <span>I have read the agreement summary above and understand the signed Master Services Agreement governs.</span>
+                    </label>
+                    <button type="submit" class="w-full bg-accentEmerald hover:bg-emerald-400 text-corporateNavy font-bold px-8 py-4 rounded-lg transition-colors shadow-xl shadow-emerald-500/10 focus:outline-none focus:ring-2 focus:ring-accentEmerald focus:ring-offset-2 focus:ring-offset-slateDark">Initialize Client Onboarding</button>
+                    <p class="text-xs text-slate-500 text-center">We use your details only to respond to this enquiry.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="border-t border-borderGray bg-corporateNavy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+            <div class="flex items-center gap-3">
+                <span class="text-lg font-extrabold tracking-tight text-white">VELOCE<span class="text-accentEmerald">.</span></span>
+                <span class="text-xs uppercase tracking-widest">Commerce Operations</span>
+            </div>
+            <p class="text-xs text-center md:text-right">&copy; <span id="year">2026</span> Veloce Commerce Operations. Independent advisory; not affiliated with Amazon.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var btn = document.getElementById('menuBtn');
+            var menu = document.getElementById('mobileMenu');
+            var o = document.getElementById('iconOpen');
+            var c = document.getElementById('iconClose');
+            function setMenu(show) {
+                menu.classList.toggle('hidden', !show);
+                o.classList.toggle('hidden', show);
+                c.classList.toggle('hidden', !show);
+                btn.setAttribute('aria-expanded', show ? 'true' : 'false');
+                btn.setAttribute('aria-label', show ? 'Close menu' : 'Open menu');
+            }
+            btn.addEventListener('click', function () { setMenu(menu.classList.contains('hidden')); });
+            menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+            window.addEventListener('resize', function () { if (window.innerWidth >= 1024) setMenu(false); });
+            document.getElementById('year').textContent = new Date().getFullYear();
+        })();
+    </script>
+</body>
+</html>
